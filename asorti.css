@@ -1,0 +1,241 @@
+header {
+    background-image: url(https://static.spalerna.com.ua/products/109000/109143/w01063pir18mr_1200.webp);
+    background-color: rgba(34, 40, 49, 0.7); 
+    backdrop-filter: blur(80px); 
+    padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+body{
+    font-family: sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-dark);
+    margin: 0;
+    padding: 0;
+    background-image: url('https://thumbs.dreamstime.com/b/%D0%B0-%D1%84%D0%B0%D0%B2%D0%B8%D1%82-%D1%88%D1%80%D0%B8%D1%84%D1%82%D0%B0-%D0%B3%D1%80%D0%B0%D1%84%D1%84%D0%B8%D1%82%D0%B8-74103752.jpg'); 
+    background-size: cover;
+    backdrop-filter: blur(30px); 
+    padding: 0px;
+}
+.секція{
+    min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 200px;
+    background-image: url(https://img.freepik.com/free-photo/grunge-wall-texture_1194-6108.jpg?semt=ais_hybrid&w=740&q=80);
+    font-size: 33px;
+}
+.блок-контейнер{
+    max-width: 800px;
+    padding: 100px;
+    width: 900px;
+    height: 400px;
+    background-color: rgba(24, 38, 59, 0.7); 
+    border: 10px dashed rgb(99, 13, 30); 
+    box-shadow: 10px 30px 20px rgb(87, 10, 10);
+    border-radius: 50px;
+    font-family: 'Bangers', cursive;
+    justify-content: center;
+}
+
+.головна-навігація ul {
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    padding: 0;
+    margin: 0;
+}
+
+.меню-контейнер {
+    display: flex;
+    justify-content: center; 
+    align-items: flex-start; 
+    gap: 80px; 
+    padding: 50px 20px;
+    background-color: transparent !important; 
+    background-image: none !important;
+    transform: rotate(-2deg); 
+    transition: transform 0.3s, box-shadow 0.3s;
+    display: flex;
+    justify-content: center; 
+    gap: 20px; 
+    align-items: center; 
+}
+
+a, h2{
+    font-family: 'Street Soul', cursive;
+    font-size: 63px;
+    color: #9c0202;
+    animation: Color 4s linear infinite;
+    -webkit-animation: Color 4s ease-in-out infinite;
+    text-shadow: 4px 4px #d6d6d6 ;
+    text-decoration: none;
+    background: #0202025e;
+    border-radius: 15px;
+    justify-content: center;
+    display: flex;
+}
+
+@keyframes Color{
+    0%{color:#ff253a;} 10%{color:#ff5f50;} 20%{color:#ff8b00;} 30%{color:#fed410;} 40%{color:#51b300;}
+    50%{color:#00c0b5;} 60%{color:#008fd5;} 70%{color:#004180;} 80%{color:#6540b6;} 90%{color:#ff2596;} 100%{color:#ff253a;}
+}
+
+@-moz-keyframes Color{
+    0%{color:#ff253a;} 10%{color:#ff5f50;} 20%{color:#ff8b00;} 30%{color:#fed410;} 40%{color:#51b300;}
+    50%{color:#00c0b5;} 60%{color:#008fd5;} 70%{color:#004180;} 80%{color:#6540b6;} 90%{color:#ff2596;} 100%{color:#ff253a;}
+}
+
+@-webkit-keyframes Color{
+    0%{color:#ff253a;} 10%{color:#ff5f50;} 20%{color:#ff8b00;} 30%{color:#fed410;} 40%{color:#51b300;}
+    50%{color:#00c0b5;} 60%{color:#008fd5;} 70%{color:#004180;} 80%{color:#6540b6;} 90%{color:#ff2596;} 100%{color:#ff253a;}
+}
+
+h2{
+    text-align: center;
+}
+
+/*================================================================*/
+/* БАЗОВІ СТИЛІ ТА ШРИФТИ */
+/*================================================================*/
+
+/* Забезпечує, що вся секція меню буде по центру, якщо вона сама є Flex/Grid контейнером */
+body {
+    background-color: #111; /* Темний фон */
+    color: #fff;
+    font-family: sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Стиль для головного заголовка секції */
+h2 {
+    font-family: 'Bangers', cursive;
+    font-size: 63px;
+    color: #9c0202;
+    text-shadow: 4px 4px #d6d6d6 ;
+    text-align: center;
+    margin: 40px 0 30px;
+}
+
+/*================================================================*/
+/* КОНТЕЙНЕР СІТКИ МЕНЮ */
+/*================================================================*/
+
+.меню-сітка {
+    display: grid;
+    /* Створення сітки 2x2: автоматично розміщує картки в 2 стовпці на широких екранах */
+    grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
+    gap: 30px;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 20px;
+}
+
+/*================================================================*/
+/* СТИЛІ ОКРЕМОЇ ГРУПИ МЕНЮ (КАРТКИ) */
+/*================================================================*/
+
+.група-меню {
+    background-color: rgba(30, 30, 30, 0.9);
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left;
+    /* Імітація нахилу, як на референсі */
+    transform: rotate(-2deg); 
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.група-меню:hover {
+    transform: rotate(0deg) scale(1.02); /* Анімація при наведенні */
+    box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
+}
+
+.назва-групи {
+    font-family: 'Bangers', cursive;
+    font-size: 40px;
+    text-align: center;
+    padding: 5px 0;
+    margin: 0 0 15px;
+    color: #fff;
+    text-shadow: 3px 3px 0 #000; /* Чорна обводка для графіті-ефекту */
+    border-radius: 5px;
+}
+
+/*================================================================*/
+/* КОЛІРНІ СХЕМИ ДЛЯ КОЖНОЇ ГРУПИ */
+/*================================================================*/
+
+/* НАПОЇ (СИНІЙ) */
+#напої .назва-групи { background-color: #007bff; } 
+#напої { border: 5px solid #007bff; }
+
+/* ЗАКУСКИ (ЗЕЛЕНИЙ) */
+#закуски .назва-групи { background-color: #28a745; } 
+#закуски { border: 5px solid #28a745; }
+
+/* ДЕСЕРТИ (ФІОЛЕТОВИЙ) */
+#десерти .назва-групи { background-color: #6f42c1; } 
+#десерти { border: 5px solid #6f42c1; }
+
+/* ОСНОВНІ СТРАВИ (СІРИЙ/ЧОРНИЙ) */
+#основні-страви .назва-групи { background-color: #6c757d; } 
+#основні-страви { border: 5px solid #6c757d; }
+
+/*================================================================*/
+/* СТИЛІ ПУНКТУ МЕНЮ */
+/*================================================================*/
+
+.меню-список {
+    padding: 10px;
+}
+
+.пункт-меню {
+    display: flex;
+    justify-content: space-between; 
+    align-items: flex-start; 
+    margin-bottom: 10px;
+    padding-bottom: 5px;
+    /* Стилізація роздільника у вигляді крапок */
+    border-bottom: 1px dotted rgba(255, 255, 255, 0.4); 
+    font-family: sans-serif;
+}
+
+.назва-пункту {
+    font-weight: bold;
+    color: #ffcc00; /* Яскравий колір для назви */
+    margin-right: 10px;
+    white-space: nowrap;
+}
+
+.опис-пункту {
+    font-size: 14px;
+    color: #ccc;
+    flex-grow: 1; /* Дозволяє опису займати доступний простір */
+    overflow: hidden;
+    padding-left: 5px; 
+    text-overflow: ellipsis;
+}
+
+.ціна {
+    font-family: 'Bangers', cursive; /* Стилізація ціни під графіті */
+    font-weight: bold;
+    color: #ffc107; /* Жовтий/помаранчевий колір для контрасту */
+    margin-left: 10px;
+    white-space: nowrap;
+    font-size: 22px;
+    text-shadow: 1px 1px 0 #000;
+}
+
+/* Стилі для мобільних пристроїв */
+@media (max-width: 768px) {
+    .меню-сітка {
+        grid-template-columns: 1fr; /* Один стовпець на маленьких екранах */
+    }
+    .група-меню {
+        transform: rotate(0deg); /* Прибрати нахил на мобільних для кращої читаності */
+    }
+}
