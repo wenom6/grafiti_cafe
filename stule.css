@@ -1,0 +1,138 @@
+header {
+  background-image: url(https://static.spalerna.com.ua/products/109000/109143/w01063pir18mr_1200.webp);
+   background-color: rgba(34, 40, 49, 0.7); 
+    backdrop-filter: blur(80px);  padding: 20px;
+    border-radius: 10px;
+    color: white;
+}
+body{
+    font-family: sans-serif;
+    color: var(--text-color);
+    background-color: var(--background-dark);
+    margin: 0;
+    padding: 0;
+    background-image: url('https://thumbs.dreamstime.com/b/%D0%B0-%D1%84%D0%B0%D0%B2%D0%B8%D1%82-%D1%88%D1%80%D0%B8%D1%84%D1%82%D0%B0-%D0%B3%D1%80%D0%B0%D1%84%D1%84%D0%B8%D1%82%D0%B8-74103752.jpg'); 
+    background-size: cover;
+    backdrop-filter: blur(30px);  padding: 0px;
+}
+.section{
+min-height: 800px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 50px 200px;
+background-image: url(https://img.freepik.com/free-photo/grunge-wall-texture_1194-6108.jpg?semt=ais_hybrid&w=740&q=80);
+  
+}
+.blok{
+    max-width: 800px;
+    padding: 100px;
+    width: 900px;
+    height: 400px;
+    background-color: rgba(24, 38, 59, 0.7); 
+    border: 10px dashed rgb(99, 13, 30); 
+    box-shadow: 10px 30px 20px rgb(87, 10, 10);
+    border-radius: 50px;
+        font-family: 'Bangers', cursive;
+        justify-content: center;
+}
+
+/* навігаія */
+nav ul {
+  display: flex;
+  justify-content: space-around;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+#menu{
+ background-color: rgba(57, 62, 70, 0.85);
+     display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+    padding: 25px;
+    border: 3px solid blue;
+    max-width: 300px;
+    text-align: left;
+    transform: rotate(-2deg); 
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+/* текст навігація */
+a, h2{
+  font-family: 'Street Soul', cursive;
+  font-size: 63px;
+  color: #9c0202;
+  animation: Color 4s linear infinite;
+  -webkit-animation: Color 4s ease-in-out infinite;
+  text-shadow: 4px 4px #d6d6d6 ;
+  text-decoration: none;
+  background: #0202025e;
+  border-radius: 15px;
+  justify-content: center;
+  display: flex;
+}
+
+@keyframes Color{
+  0%{color:#ff253a;}
+  10%{color:#ff5f50;}
+  20%{color:#ff8b00;}
+  30%{color:#fed410;}
+  40%{color:#51b300;}
+  50%{color:#00c0b5;}
+  60%{color:#008fd5;}
+  70%{color:#004180;}
+  80%{color:#6540b6;}
+  90%{color:#ff2596;}
+  100%{color:#ff253a;}
+}
+
+@-moz-keyframes Color{
+  0%{color:#ff253a;}
+  10%{color:#ff5f50;}
+  20%{color:#ff8b00;}
+  30%{color:#fed410;}
+  40%{color:#51b300;}
+  50%{color:#00c0b5;}
+  60%{color:#008fd5;}
+  70%{color:#004180;}
+  80%{color:#6540b6;}
+  90%{color:#ff2596;}
+  100%{color:#ff253a;}
+}
+
+@-webkit-keyframes Color{
+  0%{color:#ff253a;}
+  10%{color:#ff5f50;}
+  20%{color:#ff8b00;}
+  30%{color:#fed410;}
+  40%{color:#51b300;}
+  50%{color:#00c0b5;}
+  60%{color:#008fd5;}
+  70%{color:#004180;}
+  80%{color:#6540b6;}
+  90%{color:#ff2596;}
+  100%{color:#ff253a;}
+}
+
+#menu{
+  background-image: url(https://mycounter.com.ua/wp-content/uploads/2025/02/d4e52f9005247ef15d82ac1fd69516d4.webp);
+  background-size: cover;
+  padding: 50px;
+  color: #082cc9;
+  background-color: #1b10105e;
+  font-family: 'Bangers', cursive;
+}
+
+h2{
+  text-align: center;
+}
+footer {
+    background-color: var(--background-dark);
+    color: orange;
+    text-align: center;
+    padding: 20px;
+    border-top: 3px double var(--primary-color);
+    font-family: 'Bangers', cursive;
+}
