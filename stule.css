@@ -23,7 +23,7 @@ min-height: 800px;
     text-align: center;
     padding: 50px 200px;
 background-image: url(https://img.freepik.com/free-photo/grunge-wall-texture_1194-6108.jpg?semt=ais_hybrid&w=740&q=80);
-  
+  font-size: 33px;
 }
 .blok{
     max-width: 800px;
@@ -123,6 +123,11 @@ a, h2{
   color: #082cc9;
   background-color: #1b10105e;
   font-family: 'Bangers', cursive;
+
+}
+div{
+    display: flex;
+  float: left;
 }
 
 h2{
