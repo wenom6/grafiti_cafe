@@ -97,20 +97,14 @@ h2{
     text-align: center;
 }
 
-/*================================================================*/
-/* БАЗОВІ СТИЛІ ТА ШРИФТИ */
-/*================================================================*/
-
-/* Забезпечує, що вся секція меню буде по центру, якщо вона сама є Flex/Grid контейнером */
 body {
-    background-color: #111; /* Темний фон */
+    background-color: #111; 
     color: #fff;
     font-family: sans-serif;
     margin: 0;
     padding: 0;
 }
 
-/* Стиль для головного заголовка секції */
 h2 {
     font-family: 'Bangers', cursive;
     font-size: 63px;
@@ -120,13 +114,8 @@ h2 {
     margin: 40px 0 30px;
 }
 
-/*================================================================*/
-/* КОНТЕЙНЕР СІТКИ МЕНЮ */
-/*================================================================*/
-
 .меню-сітка {
     display: grid;
-    /* Створення сітки 2x2: автоматично розміщує картки в 2 стовпці на широких екранах */
     grid-template-columns: repeat(auto-fit, minmax(320px, 1fr)); 
     gap: 30px;
     max-width: 1200px;
@@ -134,23 +123,18 @@ h2 {
     padding: 20px;
 }
 
-/*================================================================*/
-/* СТИЛІ ОКРЕМОЇ ГРУПИ МЕНЮ (КАРТКИ) */
-/*================================================================*/
-
 .група-меню {
     background-color: rgba(30, 30, 30, 0.9);
     padding: 10px;
     border-radius: 10px;
     text-align: left;
-    /* Імітація нахилу, як на референсі */
     transform: rotate(-2deg); 
     box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.5);
     transition: transform 0.3s, box-shadow 0.3s;
 }
 
 .група-меню:hover {
-    transform: rotate(0deg) scale(1.02); /* Анімація при наведенні */
+    transform: rotate(0deg) scale(1.02);
     box-shadow: 0 0 20px rgba(255, 255, 255, 0.3);
 }
 
@@ -161,33 +145,19 @@ h2 {
     padding: 5px 0;
     margin: 0 0 15px;
     color: #fff;
-    text-shadow: 3px 3px 0 #000; /* Чорна обводка для графіті-ефекту */
+    text-shadow: 3px 3px 0 #000; 
     border-radius: 5px;
 }
 
-/*================================================================*/
-/* КОЛІРНІ СХЕМИ ДЛЯ КОЖНОЇ ГРУПИ */
-/*================================================================*/
-
-/* НАПОЇ (СИНІЙ) */
 #напої .назва-групи { background-color: #007bff; } 
 #напої { border: 5px solid #007bff; }
-
-/* ЗАКУСКИ (ЗЕЛЕНИЙ) */
 #закуски .назва-групи { background-color: #28a745; } 
 #закуски { border: 5px solid #28a745; }
-
-/* ДЕСЕРТИ (ФІОЛЕТОВИЙ) */
 #десерти .назва-групи { background-color: #6f42c1; } 
 #десерти { border: 5px solid #6f42c1; }
 
-/* ОСНОВНІ СТРАВИ (СІРИЙ/ЧОРНИЙ) */
 #основні-страви .назва-групи { background-color: #6c757d; } 
 #основні-страви { border: 5px solid #6c757d; }
-
-/*================================================================*/
-/* СТИЛІ ПУНКТУ МЕНЮ */
-/*================================================================*/
 
 .меню-список {
     padding: 10px;
@@ -199,14 +169,13 @@ h2 {
     align-items: flex-start; 
     margin-bottom: 10px;
     padding-bottom: 5px;
-    /* Стилізація роздільника у вигляді крапок */
     border-bottom: 1px dotted rgba(255, 255, 255, 0.4); 
     font-family: sans-serif;
 }
 
 .назва-пункту {
     font-weight: bold;
-    color: #ffcc00; /* Яскравий колір для назви */
+    color: #ffcc00; 
     margin-right: 10px;
     white-space: nowrap;
 }
@@ -214,28 +183,28 @@ h2 {
 .опис-пункту {
     font-size: 14px;
     color: #ccc;
-    flex-grow: 1; /* Дозволяє опису займати доступний простір */
+    flex-grow: 1; 
     overflow: hidden;
     padding-left: 5px; 
     text-overflow: ellipsis;
 }
 
 .ціна {
-    font-family: 'Bangers', cursive; /* Стилізація ціни під графіті */
+    font-family: 'Bangers', cursive; 
     font-weight: bold;
-    color: #ffc107; /* Жовтий/помаранчевий колір для контрасту */
+    color: #ffc107; 
     margin-left: 10px;
     white-space: nowrap;
     font-size: 22px;
     text-shadow: 1px 1px 0 #000;
 }
 
-/* Стилі для мобільних пристроїв */
+
 @media (max-width: 768px) {
     .меню-сітка {
-        grid-template-columns: 1fr; /* Один стовпець на маленьких екранах */
-    }
+        grid-template-columns: 1fr; 
+        }
     .група-меню {
-        transform: rotate(0deg); /* Прибрати нахил на мобільних для кращої читаності */
+        transform: rotate(0deg);
     }
 }
